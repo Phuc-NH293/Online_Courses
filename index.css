@@ -1,0 +1,176 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1530;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-item {
+  width: 100%;
+}
+
+.container-item-text {
+  width: 519px;
+  height: 200px;
+  line-height: 30px;
+
+  h3 {
+    font-size: 45px;
+    font-weight: 400;
+    color: rgba(63, 81, 75, 1);
+
+  }
+
+  p {
+    word-wrap: break-word;
+    font-size: 19px;
+    height: 81px;
+    font-weight: 400;
+    color: rgba(63, 81, 75, 1);
+    ;
+  }
+
+}
+
+.container-item-products {
+  display: flex;
+  width: calc(100%/4);
+  gap: 20px;
+}
+
+.container-item-products-list {
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.container-item-products-list-text span {
+  font-size: 20px;
+}
+
+.container-item-products-list-text p {
+
+  font-size: 17px;
+}
+
+.original-price s {
+  font-size: 13px;
+  color: rgba(114, 119, 108, 1);
+}
+
+.sale-price {
+  font-size: 18px !important;
+  color: rgba(63, 81, 75, 1);
+  ;
+}
+
+.timetable-left {
+  font-size: 15px;
+  color: rgba(114, 119, 108, 1);
+  ;
+}
+
+.timetable-right {
+  font-size: 14px;
+  color: rgba(78, 92, 88, 1);
+  ;
+}
+
+.products-timetable {
+  display: flex;
+  gap: 40px;
+}
+
+@media (min-width:320px) and (max-width: 600px) {
+  .container-item-products {
+    width: 100%;
+    display: grid;
+
+  }
+
+
+  .container-item-products-list-img img {
+
+    height: auto;
+    object-fit: cover;
+
+  }
+
+  .container-item-text {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    gap: 20px;
+
+  }
+
+  .container-item-text h3 {
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    ;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-item-products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .container-item-products-list-img img {
+
+    height: auto;
+    object-fit: cover;
+
+  }
+
+  .container-item-text {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    gap: 20px;
+
+  }
+
+  .container-item-text h3 {
+    white-space: nowrap;
+
+
+  }
+
+  .container-item-products-list-text p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+
+  }
+}
